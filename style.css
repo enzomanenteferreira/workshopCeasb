@@ -1,32 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Media Query para telas pequenas (smartphones) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 0; /* Reduz o preenchimento superior e inferior da barra de navegação */
+        width: 100%; /* Garante que a navbar ocupe toda a largura */
+    }
+
+    .navbar img {
+        width: 80px; /* Use um valor fixo em pixels ou uma medida relativa como 'vw' */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 0 auto; /* Centraliza a logo no contêiner */
+    }
+
+    .logo-text {
+        font-size: 14px; /* Reduz o tamanho do texto para se adequar a telas menores */
+    }
 }
 
+/* Media Query para telas ainda menores */
+@media (max-width: 320px) {
+    .navbar {
+        padding: 5px 0; /* Reduz ainda mais o preenchimento para telas muito pequenas */
+        width: 100%; /* Garante que a navbar ocupe toda a largura */
+    }
 
+    .navbar img {
+        width: 60px; /* Ajuste conforme necessário */
+        margin-top: 10px; /* Adiciona um pouco de margem acima da logo */
+    }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-
-.navbar {
-    color:white;
-    padding-left: 50px;
-    text-decoration:darkgrey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .logo-text {
+        font-size: 12px; /* Reduz o tamanho do texto para se adequar a telas muito pequenas */
+    }
 }
 
 .navbar img {
-    height: 70px;
+    max-width: 80px; /* Valor máximo para a largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a logo */
+    margin-left: 5px;
 }
-
